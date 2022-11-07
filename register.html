@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page 3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/page_3/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.12.3.min.js"></script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u15" class="ax_default _一级标题">
+        <div id="u15_div" class=""></div>
+        <div id="u15_text" class="text ">
+          <p><span>开户注册网址</span></p>
+        </div>
+      </div>
+      
+      <!-- Unnamed (矩形) -->
+      <div id="u150" class="ax_default _一级标题">
+        <div id="u150_div" class=""></div>
+        <div id="u150_text" class="text ">
+          <p><span></span>
+		  <span><input type="text" id="rcode" class="ax_default label"/></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u29" class="ax_default label">
+        <div id="u29_div" class=""></div>
+        <div id="u29_text" class="text ">
+          <p><span>注：如有邀请码，在输入框输入邀请码，可以生成对应邀请码的注册网址。</span></p>
+        </div>
+      </div>
+      
+      <!-- Unnamed (矩形) -->
+      <div id="u16" class="ax_default _二级标题">
+        <div id="u16_div" class=""></div>
+        <div id="u16_text" class="text ">
+          <p><a id="u17" class="link" href="https://apply.dec.international"><span id="s1">https://apply.dec.international</span></a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u18" class="ax_default _二级标题">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
+          <p><a id="u19" class="link" href="https://apply.dec.live"><span id="s2">https://apply.dec.live</span></a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u20" class="ax_default _二级标题">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
+          <p><a id="u21" class="link" href="https://apply.dec.online"><span id="s3">https://apply.dec.online</span></a></p>
+        </div>
+      </div>
+    </div>
+
+	<script> 
+		$(function(){
+			var s1 = "https://apply.dec.international/"
+			var s2 = "https://apply.dec.live/"
+			var s3 = "https://apply.dec.online/"
+			
+			$('#rcode').on('input propertychange', function() {//监听文本框
+                
+				console.log($('#rcode').val());
+					
+				var code = $('#rcode').val()
+				
+				var temp = ""
+				 
+				if (code.length > 0) {
+					temp = "?refcode="
+				}
+				
+				$("#s1").text(s1 + temp + code);
+				$("#s2").text(s2 + temp + code);
+				$("#s3").text(s3 + temp + code);
+				
+				$("#u17").attr("href", s1 + temp + code);
+				$("#u19").attr("href", s2 + temp + code);
+				$("#u21").attr("href", s3 + temp + code);
+            });
+					
+		})
+	</script>
+  </body>
+</html>
