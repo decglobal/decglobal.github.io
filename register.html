@@ -92,6 +92,7 @@
 			var s1 = "https://apply.dec.international/"
 			var s2 = "https://apply.decodeforex.net/"
 			var s3 = "https://apply.decodeforex.org/"
+			var s4 = "https://apply.decodefx-cn.com/"
 			
 			$('#rcode').on('input propertychange', function() {//监听文本框
                 
@@ -108,10 +109,12 @@
 				$("#s1").text(s1 + temp + code);
 				$("#s2").text(s2 + temp + code);
 				$("#s3").text(s3 + temp + code);
+				$("#s4").text(s4 + temp + code);
 				
 				$("#u17").attr("href", s1 + temp + code);
 				$("#u19").attr("href", s2 + temp + code);
 				$("#u21").attr("href", s3 + temp + code);
+				$("#u21").attr("href", s4 + temp + code);
             });
 					
 		})
