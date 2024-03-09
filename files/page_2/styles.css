@@ -201,7 +201,7 @@
 
 
 
-#u14_div {
+#u44_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -221,7 +221,7 @@
   font-size:25px;
   color:#0000FF;
 }
-#u14 {
+#u44 {
   border-width:0px;
   position:absolute;
   left:108px;
@@ -235,14 +235,14 @@
   font-size:25px;
   color:#0000FF;
 }
-#u14 .text {
+#u44 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u14_text {
+#u44_text {
   border-width:0px;
   white-space:nowrap;
   text-transform:none;
